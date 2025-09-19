@@ -1,0 +1,12 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "author": "imjxsx",
+  "packageManager": "pnpm@10.17.0",
+  "devDependencies": {
+    "typescript": "5.9.2"
+  }
+}
