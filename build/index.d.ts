@@ -1,35 +1,8 @@
-declare const colors: {
-    reset: string;
-    bright: string;
-    dim: string;
-    underscore: string;
-    blink: string;
-    reverse: string;
-    hidden: string;
-    fg: {
-        black: string;
-        red: string;
-        green: string;
-        yellow: string;
-        blue: string;
-        magenta: string;
-        cyan: string;
-        white: string;
-        gray: string;
-    };
-    bg: {
-        black: string;
-        red: string;
-        green: string;
-        yellow: string;
-        blue: string;
-        magenta: string;
-        cyan: string;
-        white: string;
-        gray: string;
-    };
-    fg256: (n: number) => string;
-    bg256: (n: number) => string;
-};
+import type { Colors } from "./types/index.js";
+/**
+ * ANSI escape codes for styling terminal output.
+ * Includes foreground, background, 256-color and truecolor (RGB) support.
+ */
+declare const colors: Colors;
 export default colors;
 export { colors, };

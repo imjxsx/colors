@@ -1,6 +1,7 @@
 {
   "name": "colors",
-  "version": "1.0.0",
+  "description": "ANSI escape codes for styling terminal output.",
+  "version": "1.0.1",
   "type": "module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -8,5 +9,8 @@
   "packageManager": "pnpm@10.17.0",
   "devDependencies": {
     "typescript": "5.9.2"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }

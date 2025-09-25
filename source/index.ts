@@ -1,4 +1,10 @@
-const colors = {
+import type { Colors } from "./types/index.js";
+
+/**
+ * ANSI escape codes for styling terminal output.
+ * Includes foreground, background, 256-color and truecolor (RGB) support.
+ */
+const colors: Colors = {
   reset: "\x1b[0m",
   bright: "\x1b[1m",
   dim: "\x1b[2m",
@@ -16,6 +22,15 @@ const colors = {
     cyan: "\x1b[36m",
     white: "\x1b[37m",
     gray: "\x1b[90m",
+    bright: {
+      red: "\x1b[91m",
+      green: "\x1b[92m",
+      yellow: "\x1b[93m",
+      blue: "\x1b[94m",
+      magenta: "\x1b[95m",
+      cyan: "\x1b[96m",
+      white: "\x1b[97m",
+    },
   },
   bg: {
     black: "\x1b[40m",
@@ -27,9 +42,20 @@ const colors = {
     cyan: "\x1b[46m",
     white: "\x1b[47m",
     gray: "\x1b[100m",
+    bright: {
+      red: "\x1b[101m",
+      green: "\x1b[102m",
+      yellow: "\x1b[103m",
+      blue: "\x1b[104m",
+      magenta: "\x1b[105m",
+      cyan: "\x1b[106m",
+      white: "\x1b[107m",
+    },
   },
   fg256: (n: number) => `\x1b[38;5;${n}m`,
   bg256: (n: number) => `\x1b[48;5;${n}m`,
+  fgRGB: (r: number, g: number, b: number) => `\x1b[38;2;${r};${g};${b}m`,
+  bgRGB: (r: number, g: number, b: number) => `\x1b[48;2;${r};${g};${b}m`,
 };
 export default colors;
 export {
