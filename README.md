@@ -1,48 +1,48 @@
-<h1 align="center">🎨 colors (v1.0.2)</h1>
-<p align="center">ANSI escape codes for styling terminal output.</p>
-<p align="center">Includes <b>foreground</b>, <b>background</b>, <b>256-color</b> and <b>truecolor (RGB)</b> support.</p>
+# 🎨 @imjxsx/colors (v1.0.3)
 
-<h2>📥 Install</h2>
-<h3>- PNPM</h3>
+## ANSI escape codes for styling terminal output
 
-```bash
-pnpm add github:imjxsx/colors
-```
-<h3>- NPM</h3>
+### 📥 Installation
+
+---
+
+#### - With NPM
 
 ```bash
-npm install github:imjxsx/colors
+npm install @imjxsx/colors
 ```
-<h3>- YARN</h3>
+
+#### - With PNPM
 
 ```bash
-yarn add github:imjxsx/colors
+pnpm add @imjxsx/colors
 ```
 
-<h2>🚀 Usage</h2>
+#### - With YARN
 
-```ts
-import colors from "colors";
+```bash
+yarn add @imjxsx/colors
+```
+
+---
+
+### 🚀 Example of Use
+
+```javascript
+// index.js
+import colors from "@imjxsx/colors";
 
 // Basic foreground colors
 console.log(colors.fg.red + "Error!" + colors.reset);
 console.log(colors.fg.green + "Success!" + colors.reset);
-
 // Background colors
 console.log(colors.bg.yellow + colors.fg.black + " Warning " + colors.reset);
-
 // 256-color
 console.log(colors.fg256(202) + "Orange-ish text" + colors.reset);
-
 // Truecolor (RGB)
 console.log(colors.fgRGB(128, 0, 200) + "Custom purple" + colors.reset);
 ```
 
-<h2>🔷 Features</h2>
-<ul>
-  <li>Foreground & Background colors</li>
-  <li>Bright colors</li>
-  <li>256-color support</li>
-  <li>Truecolor (RGB)</li>
-  <li>Text styles: bright, dim, underscore, blink, reverse, hidden</li>
-</ul>
+---
+
+Developed with **❤** by **[imjxsx](https://github.com/imjxsx)**

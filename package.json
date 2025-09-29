@@ -1,16 +1,38 @@
 {
-  "name": "colors",
-  "description": "ANSI escape codes for styling terminal output.",
-  "version": "1.0.1",
+  "name": "@imjxsx/colors",
+  "version": "1.0.3",
+  "description": "ANSI escape codes for styling terminal output",
   "type": "module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "author": "imjxsx",
-  "packageManager": "pnpm@10.17.0",
-  "devDependencies": {
-    "typescript": "5.9.2"
-  },
+  "files": [
+    "build",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc"
+  },
+  "keywords": [
+    "colorize",
+    "color",
+    "javascript",
+    "typescript",
+    "nodejs",
+    "colors"
+  ],
+  "author": "imjxsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjxsx/colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imjxsx/colors/issues"
+  },
+  "homepage": "https://github.com/imjxsx/colors#readme",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@types/node": "20.0.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.2"
   }
 }
